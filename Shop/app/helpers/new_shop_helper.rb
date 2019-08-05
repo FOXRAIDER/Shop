@@ -1,0 +1,2 @@
+module NewShopHelper
+end
