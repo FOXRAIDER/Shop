@@ -1,16 +1,24 @@
-<h1>asdjifijkdsfkndj</h1>
-
+<h2 class = 'text-center font-weight-bold'>Add youself car </h2>
+<div class ='container d-flex justify-content-center'>
 <%= form_for :page, url: pages_path do |f| %>
-    <p>
-        Title <br>
-        <%= f.text_field :title %>
-    </p>
+    <div class = "font-weight-bold h3 mt-4 mb-3 text-center">
+        Tell us name your car
+        <br>
+        <%= f.text_field(:title, {:class => 'form-control mt-3 mx-auto'}) %>
+    </div>
 
-    <p>
-         Text<br>
-        <%= f.text_area :body %>
-    </p>
-
-    <%= f.submit%>
-
+    <div class = "font-weight-bold h3 mt-4 mb-3 text-center">
+        Tell us about your car
+        <br>
+        <%= f.text_area(:body, {:class => 'form-control mt-3 mx-auto'}) %>
+    </div>
+    <div class = "font-weight-bold h3 mt-4 mb-3 text-center">
+        How much do you want money?
+        <br>
+        <%= f.text_field(:price, {:class => 'form-control mt-3 col-4 mx-auto '}) %>
+    </div>
+    <div class = "text-center">
+        <%= f.submit("Save",{:class=> 'btn btn-outline-dark '})%>
+    </div>
 <% end %>
+</div>
